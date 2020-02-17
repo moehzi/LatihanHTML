@@ -1,0 +1,89 @@
+.container{
+    width: 1000px;
+    margin: auto;
+    background-color: goldenrod;
+    
+}
+
+.header{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 24px;
+    padding: 5px;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: darkgray;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+th{
+    background-color: chocolate;
+}
+
+td{
+    background-color: darksalmon;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 770px;
+}
+
+.biodata{
+    padding: 10px;
+    float: left;
+    
+}
+
+.judul{
+    border: 1px solid black;
+    background-color: wheat;
+}
+
+img{
+    height: 190px;
+    width: 130px;
+    padding: 10px;
+}
+
+.foto{
+    float: left;
+    margin: auto;
+    text-align: center;
+    
+}
+
+p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+}
+
+
+
+
+
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    zoom: 1;
+}
