@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<head>
+<title>Belajar</title>
+ <script LANGUAGE="JavaScript">
+
+//hitung
+ function hitung() {
+ a=eval(form.angka1.value); 
+ b=eval(form.angka2.value);
+ c=eval(form.angka3.value);
+ d=eval(form.angka4.value);
+ e=eval(form.angka5.value); 
+
+ 
+average();
+highest();
+lowest();
+median();
+ }
+ //average
+function average(){
+ rata = (a+b+c+d+e)/5 
+ form.avg.value = rata;
+}
+//maximum
+function highest(){
+    var number = [a,b,c,d,e]
+    var maximal = Math.max.apply(Math, number);
+    form.max.value = maximal;
+
+}
+//minimum
+function lowest(){
+    var number = [a,b,c,d,e]
+    var minimum = Math.min.apply(Math, number);
+    form.min.value = minimum;
+}
+//median
+function median() {
+  var number = [a,b,c,d,e]
+  number.sort((a,b)=> a-b);
+  var lowMiddle = Math.floor((number.length -1)/2);
+  var highMiddle = Math.ceil((number.length -1)/2);
+  var hasilmedian = (number[lowMiddle] + number[highMiddle]) /2;
+  form.med.value = hasilmedian;
+    
+}
+
+
+
+
+     
+ //reset
+ function reset() {
+ form.angka1.value="";
+ form.angka2.value="";
+ form.angka3.value="";
+ form.angka4.value="";
+ form.angka5.value="";
+ form.avg.value = "";
+ form.min.value = "";
+ form.max.value = "";
+ form.med.value = "";
+ }
+ 
+ </script>
+</head>
+<body style="background-color: burlywood;">
+  <div class="container" style="background-color: darkcyan; width: 20%;padding: 10px; margin: auto; margin-top: 10%;">
+  <h1 style="text-align: center;">Calculator</h1>
+ <form name="form;" style="text-align: center;">
+ <p>Nilai -1 <input type="text" name="angka1"></p>
+ <p>Nilai -2 <input type="text" name="angka2"></p>
+ <p>Nilai -3 <input type="text" name="angka3"></p>
+ <p>Nilai -4 <input type="text" name="angka4"></p>
+ <p>Nilai -5 <input type="text" name="angka5"></p>
+  
+ <input type=button name=submit onclick="hitung()" value="HITUNG">
+ <input type=button name=submit onclick="reset()" value="RESET">
+
+ <p>Average<input type="text" name="avg" size="8" style="margin-left:20px;"></p>
+ <p>Maximal<input type="text" name="max" size="8"style="margin-left:15px;"></p>
+ <p>Minimum<input type="text" name="min" size="8" style="margin-left:10px;"></p>
+ <p>Median<input type="text" name="med" size="8" style="margin-left:24px;"></p>
+
+ </form>
+</div>
+</body>
+</html>
