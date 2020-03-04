@@ -1,28 +1,60 @@
-<!DOCTYPE HTML>
-<head>
-<title>Belajar</title>
-<script src="file.js"></script>
+<!DOCTYPE html>
+  <html>
+    <head>
+        <Title>Muhammad Nur Faisi S</Title>
+        <script src="file.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        
+        <nav>
+            <div class="tab"><label class="logo">Moehzi</label>
+                <ul>
+                    <li><a class="active" href="index.html">Task 3</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron cf">
+                <div class="header cf">
+                  <div class="form">
+                    <form name="form">
+                      <h1 style="padding: 10px;">Input Nilai</h1>
+                      <div class="nilai">
+                        <p>Nilai -1 <input type="text" name="angka1" class="form_input"></p>
+                        <p>Nilai -2 <input type="text" name="angka2" class="form_input"></p>
+                        <p>Nilai -3 <input type="text" name="angka3" class="form_input"></p>
+                        <p>Nilai -4 <input type="text" name="angka4" class="form_input"></p>
+                        <p>Nilai -5 <input type="text" name="angka5" class="form_input"></p></div>
+                  
+                      <input class="tombolHitung" type=button name=submit onclick="hitung()" value="HITUNG">
+                      <input class="tombolReset" type=button name=submit onclick="reset()" value="RESET">
+                      <div class="result">
+                      <label>Average : <input type="text" name="avg" class="form_hasil"></label>
+                      <label>Maximal : <input type="text" name="max" class="form_hasil"></label>
+                      <label>Minimum : <input type="text" name="min" class="form_hasil"></label>
+                      <label>Median   : <input type="text" name="med" class="form_hasil"></label>
+                      </div>
+                      
+                      </form>
+                      </div>  
+                </div>  
+            </div>
+        
+        
+        <footer>
+            <p class="copyright">Copyright 2020 | Built by. Muhammad Nur Faisi S.</p>
+                <p class="follow">Follow me on</p>
+            <a href="https://web.facebook.com/faizi1234098"><img class="facebook" src="facebook.png" alt="" ></a>
+            <a href="https://www.instagram.com/muhnurfaizi/"><img class="instagram" src="instagram.png" alt="" ></a>
+            
+        </footer>
+    </body>
 
-</head>
-<body style="background-color: burlywood;">
-  <div class="container" style="background-color: darkcyan; width: 20%;padding: 10px; margin: auto; margin-top: 10%;">
-  <h1 style="text-align: center;">Calculator</h1>
- <form name="form" style="text-align: center;">
- <p>Nilai -1 <input type="text" name="angka1"></p>
- <p>Nilai -2 <input type="text" name="angka2"></p>
- <p>Nilai -3 <input type="text" name="angka3"></p>
- <p>Nilai -4 <input type="text" name="angka4"></p>
- <p>Nilai -5 <input type="text" name="angka5"></p>
-  
- <input type=button name=submit onclick="hitung()" value="HITUNG">
- <input type=button name=submit onclick="reset()" value="RESET">
 
- <p>Average<input type="text" name="avg" size="8" style="margin-left:20px;"></p>
- <p>Maximal<input type="text" name="max" size="8"style="margin-left:15px;"></p>
- <p>Minimum<input type="text" name="min" size="8" style="margin-left:10px;"></p>
- <p>Median<input type="text" name="med" size="8" style="margin-left:24px;"></p>
 
- </form>
-</div>
-</body>
+
 </html>
